@@ -1,0 +1,31 @@
+Cimplr Conda Cheat Sheet
+========================
+
+# with (ana)conda installed:
+# configure relevant channels
+
+conda config --add channels r
+conda config --add channels defaults
+conda config --add channels conda-forge
+conda config --add channels bioconda
+
+# create an environment
+conda create --name Struppi
+source activate Struppi
+
+# installing r-cimpl from the bioconda channel
+# within the container
+# this pulls in the relevant R base ecosystem
+conda install r-cimpl
+
+# to quit out the environment
+deactivate Struppi
+
+
+# to clean things up
+# ro remove conda environment
+conda env remove —name Struppi
+
+# to clean unused packages:
+conda clean -a
+
