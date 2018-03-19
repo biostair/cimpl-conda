@@ -19,7 +19,7 @@ source activate Struppi
 conda install r-cimpl
 
 # to quit out the environment
-deactivate Struppi
+source deactivate Struppi
 
 
 # to clean things up
